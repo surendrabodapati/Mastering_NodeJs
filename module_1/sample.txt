@@ -1,0 +1,4 @@
+This is sample file to experiment with the file system moduel so light if you don't want it you can ofcourse delete.
+The data present here will be added to the sample.text by running the play_file.js
+The data present here will be added to the sample.text by running the play_file.js \n.
+The data present here will be added to the sample.text by running the play_file.js \n.
