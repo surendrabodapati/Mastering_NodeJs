@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cal_pub": "^1.0.0",
-    "figlet": "^1.7.0"
+    "figlet": "^1.7.0",
+    "morgan": "^1.10.0"
   }
 }

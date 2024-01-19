@@ -1,15 +1,29 @@
+// File to try express moudle with HTTP and middleware
+
 const express = require('express')
 
 const app = express()
 
-// To use middleware
+const customMiddleware = require('./middleware/customMiddleware')
+
+const thirdpartyMiddleware = require('morgan')
+
+// To use built in middleware in express
 app.use(express.json())
+
+// custom middleware
+app.use(customMiddleware.middlewareOne)
+app.use(customMiddleware.middlewareTwo)
+
+//Third middleware : morgan to log the requests
+app.use(thirdpartyMiddleware())
 
 // get post request response
 
 app.get('/',(req , res)=>{
     res.send('Hello , just checking the test application')
 })
+
 
 app.get('/nodemon', (req , res)=>{
     res.send('This is to check how the nodemon is working so if its displaying you can chill')
